@@ -1,0 +1,89 @@
+body {
+  background-color: #667799;
+  color: white;
+  font-family: "Inconsolata", "Gamja Flower", monospace;
+}
+
+/* div:lang(ko){font-family: 'Jua', sans-serif;;} */
+
+#main {
+  text-align: center;
+}
+
+#list {
+  font-size: 20px;
+  margin-left: 41%;
+  margin-right: 42%;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* text-align: left; */
+}
+ul {
+  width: 70%;
+}
+
+.js-clock {
+  font-size: 50px;
+}
+
+.js-greetings,
+.showing {
+  font-size: 35px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+text {
+  display: inline-block;
+  /* text-align: left; */
+  /* flex-direction: row; */
+}
+
+button {
+  border-radius: 100%;
+  border: none;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-weight: bold;
+  color: red;
+  /* background-color: white; */
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  /* flex-direction: row; */
+  /* text-align: end; */
+}
+
+#list ul li {
+  text-align: left;
+}
+
+#list ul li button {
+  text-align: end;
+}
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
